@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             agent {
-                label 'master'
+                label 'main'
             }
             steps {
                 echo 'Cloning...'
@@ -54,7 +54,7 @@ pipeline {
         
         stage('Package') {
             agent {
-                label 'master'
+                label 'main'
             }
             steps {
                 echo 'Packaging...'
